@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+/* navigation area styling begins */
+#header{
+    background-color: black;
+    font-family: 'Times New Roman';
+  height: 100px; 
+ 
+}
+
+ul{
+color: white;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+}
+li{
+    float: left;
+    border-right: 1px dotted white;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active){
+    background-color: maroon;
+}
+.active{
+    background-color: burlywood;
+}
+/* navigation area styling ends */
+/* contentwrapper begins */
+
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+
+#contentcolumn{
+    margin: 0 230px 0 230px;
+}
+.innertext{
+    font-weight: Arial;
+    color: rgb(128, 16, 16);
+    margin: 20px;
+}
+
+/* contentwrapper ends */
+/* leftcolumn area begins */
+#leftcolumn{
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    background: lightblue;
+}
+/* leftcolumn area begins */
+/* rightcolumn begins */
+#rightcolumn{
+    
+    float: left;
+    width: 230px;
+    margin-left: -230px;
+    background: yellowgreen;
+}
+/* rightcolumn ends */
+
+/* footer begins*/
+#Footer{
+    clear: left;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 0px;
+    height: 60px;
+}
+/* footer ends */
+/* from begin */
+form{
+    text-align: center;
+    color: black;
+ 
+}
+h2{
+    text-align: center;
+    color: black;
+}
+h3{
+    text-align: center;
+    color: black;
+}
+/* form ends */
+#news{
+    text-align: left;
+    color: black;
+}
+h1{
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+h4{
+    text-align: left;
+    float: left;
+    font-weight: Arial;
+    color: rgb(128, 16, 16);
+    margin: 20px;
+    margin: 0 230px 0 230px;
+}
+#back{
+    text-align: center;
+
+}
+/* responsive design styling */
+/* beginning of 840px */
+@media(max-width:840px){
+    #leftcolumn{
+        margin-left: -100%;
+        background-color: green;
+    }
+    #rightcolumn{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        clear: both;
+    }
+    #contentcolumn{
+margin-right: 0;
+    }
+}
+   
+
+/* end of 840px */
+/* beginning of 600px */
+@media(max-width:600px){
+    #leftcolumn{
+        margin-left: 0;
+        clear: both;
+        background-color: khaki;
+        float: none;
+        width: 100%;
+    }
+
+    #contentcolumn{
+        margin-left: 0;
+     
+    }
+    
+}
